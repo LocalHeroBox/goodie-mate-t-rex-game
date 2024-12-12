@@ -540,7 +540,7 @@ html[subframe] body {
 
 /* Offline page */
 .offline .interstitial-wrapper {
-  color: #ece4ff;
+  color: #3d0bb0;
   font-size: 1em;
   line-height: 1.55;
   margin: 0;
@@ -606,9 +606,9 @@ html[subframe] body {
 }
 
 .runner-canvas {
-  background-color: #ece4ff;
+  background-color: #ffffff;
   border-radius: 5px;
-  border: 2px solid #6426f8;
+  /*border: 2px solid #6426f8;*/
     width: 100%; /* Adapt to container */
   height: auto; /* Maintain aspect ratio */
 }

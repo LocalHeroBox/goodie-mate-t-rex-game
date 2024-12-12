@@ -284,8 +284,9 @@ function hideClass(name) {
         this.dimensions.HEIGHT,
         Runner.classes.PLAYER
       );
+
       this.canvasCtx = this.canvas.getContext("2d");
-      this.canvasCtx.fillStyle = "#ECE4FF";
+      this.canvasCtx.fillStyle = "#ffffff";
       this.canvasCtx.fill();
       Runner.updateCanvasScaling(this.canvas);
       // Horizon contains clouds, obstacles and the ground.
