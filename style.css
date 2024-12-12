@@ -543,7 +543,7 @@ html[subframe] body {
   color: #ece4ff;
   font-size: 1em;
   line-height: 1.55;
-  margin: 100px auto 0;
+  margin: 0;
   max-width: 600px;
   display: flex;
   justify-content: center;
@@ -575,6 +575,10 @@ html[subframe] body {
   display: flex;
   justify-content: center;
   align-items: center;
+    width: 100%; /* Fit to container */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden;
+  background: transparent; /* Ensure no background issues */
 }
 
 .offline .instructions {
@@ -587,6 +591,8 @@ html[subframe] body {
   font-size: 10px;
   color: #6426f8;
   display: block;
+    text-align: center; /* Center text */
+  margin: 10px 0; /* Add some spacing */
 }
 
 .offline .runner-canvas {
@@ -603,15 +609,15 @@ html[subframe] body {
   background-color: #ece4ff;
   border-radius: 5px;
   border: 2px solid #6426f8;
+    width: 100%; /* Adapt to container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .offline .controller {
-  background: #ece4ff;
-  height: 100vh;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100vw;
+  background: transparent; /* Remove background for embedding */
+  width: 100%; /* Fit to container */
+  height: 100%; /* Ensure it uses container height */
+  position: relative; /* Position relative to container */
   z-index: 1;
 }
 
